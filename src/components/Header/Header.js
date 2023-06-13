@@ -8,7 +8,7 @@ export default function Navbar() {
     };
 
     return (
-        <div>
+        <div className="sticky top-0 z-50">
             <nav className="flex items-center justify-between flex-wrap bg-white p-6 shadow-md">
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
                     <svg
@@ -24,7 +24,7 @@ export default function Navbar() {
                 </div>
                 <div className="block lg:hidden">
                     <button
-                        className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400  "
+                        className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 "
                         onClick={toggleMenu}
                     >
                         <svg
@@ -65,7 +65,7 @@ export default function Navbar() {
                     <div>
                         <a
                             href="#"
-                            className="inline-block px-5 py-3 text-lg leading-none text-black bg-teal-500 border rounded transition-colors duration-300 hover:text-black hover:border hover:border-black hover:bg-white mt-4 lg:mt-0"
+                            className="inline-block px-5 py-3 text-lg leading-none text-black bg-teal-500 border rounded transition-colors duration-300 hover:text-teal-500 hover:border hover:border-teal-500 hover:bg-white mt-4 lg:mt-0"
                         >
                             jayrealtygroup@gmail.com
                         </a>

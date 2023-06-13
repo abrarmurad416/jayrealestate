@@ -1,9 +1,11 @@
-import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header"
+import Landing from "./components/Landing/Landing";
 
 export default function App() {
     return (
         <div>
-            <Navbar />
+            <Header />
+            <Landing />
         </div>
     );
 }
