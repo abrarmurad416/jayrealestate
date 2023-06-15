@@ -12,7 +12,7 @@ export default function Landing() {
                         </span>
                         <br /> in GTA Real Estate
                     </h1>
-                    <p className="mt-4 text-black">
+                    <p className="mt-4 text-black text-justify">
                         Welcome to J Realty Group, where exceptional service
                         meets your real estate needs. With our extensive
                         knowledge of the Greater Toronto Area (GTA) market, we
@@ -26,16 +26,18 @@ export default function Landing() {
                         Experience the difference of working with a reputable
                         real estate company that puts your needs first. Contact
                         us today and let us open the doors to your real estate
-                        success
+                        success.
                     </p>
                 </div>
             </div>
             <div className="flex items-center justify-center lg:justify-end mx-10">
-                <img
-                    src="/images/Group 1.png"
-                    alt="Image"
-                    className="w-full max-w-lg lg:max-w-none"
-                />
+                <div className="h-80 lg:h-auto">
+                    <img
+                        src="/images/Group 1.png"
+                        alt="Image"
+                        className="w-full h-full object-contain"
+                    />
+                </div>
             </div>
         </div>
     );
