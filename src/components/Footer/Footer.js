@@ -70,7 +70,8 @@ const Footer = () => {
                                 <li>
                                     <a
                                         class="text-gray-200 transition hover:text-gray-50"
-                                        href="/"
+                                        href="https://www.instagram.com/realtygroup_j/"
+                                        target="_blank"
                                     >
                                         Instagram
                                     </a>

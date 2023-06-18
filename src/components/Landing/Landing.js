@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Landing() {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 h-screen">
+        <div id="about" className="grid grid-cols-1 lg:grid-cols-2 h-screen">
             <div className="flex items-center justify-center lg:justify-start">
                 <div className="mx-10">
                     <h1 className="text-4xl font-extrabold">
@@ -12,7 +12,7 @@ export default function Landing() {
                         </span>
                         <br /> in GTA Real Estate
                     </h1>
-                    <p className="mt-4 text-black text-justify">
+                    <p className="mt-4 text-black text-justify text-">
                         Welcome to J Realty Group, where exceptional service
                         meets your real estate needs. With our extensive
                         knowledge of the Greater Toronto Area (GTA) market, we
@@ -20,13 +20,13 @@ export default function Landing() {
                         investment opportunity. Our team of experienced
                         professionals is committed to providing unmatched
                         excellence, guiding you through every step of the real
-                        estate process. Whether you're buying, selling, or
-                        seeking expert advice, trust J Realty Group to deliver
-                        personalized solutions tailored to your unique goals.
-                        Experience the difference of working with a reputable
-                        real estate company that puts your needs first. Contact
-                        us today and let us open the doors to your real estate
-                        success.
+                        estate process. <br /> <br /> Whether you're buying,
+                        selling, or seeking expert advice, trust J Realty Group
+                        to deliver personalized solutions tailored to your
+                        unique goals. Experience the difference of working with
+                        a reputable real estate company that puts your needs
+                        first. Contact us today and let us open the doors to
+                        your real estate success.
                     </p>
                 </div>
             </div>

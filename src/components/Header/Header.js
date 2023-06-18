@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -62,12 +63,14 @@ export default function Navbar() {
                     } flex-grow lg:flex lg:items-center lg:w-auto`}
                 >
                     <div className="text-lg lg:flex-grow">
-                        <a
-                            href="#responsive-header"
-                            className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200"
+                        <ScrollLink
+                            to="about"
+                            smooth={true}
+                            duration={500}
+                            className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200 hover:cursor-pointer"
                         >
                             About
-                        </a>
+                        </ScrollLink>
                         <a
                             href="#responsive-header"
                             className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200"
