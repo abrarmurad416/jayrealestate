@@ -5,6 +5,13 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [hasScrolled, setHasScrolled] = useState(false);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
@@ -37,10 +44,16 @@ export default function Navbar() {
                         height="54"
                         viewBox="0 0 54 54"
                         xmlns="http://www.w3.org/2000/svg"
-                    ></svg>
-                    <span className="font-bold text-2xl tracking-tight text-black">
-                        J Realty Group
-                    </span>
+                    ></svg>{" "}
+                    <a
+                        href="#MainContent"
+                        onClick={scrollToTop}
+                        className="hover:cursor-pointer"
+                    >
+                        <span className="font-bold text-2xl tracking-tight text-black">
+                            J Realty Group
+                        </span>
+                    </a>
                 </div>
                 <div className="block lg:hidden">
                     <button
@@ -71,17 +84,27 @@ export default function Navbar() {
                         >
                             About
                         </ScrollLink>
+                        <ScrollLink
+                            to="testimonials"
+                            smooth={true}
+                            duration={500}
+                            className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200 hover:cursor-pointer"
+                        >
+                            Testimonials
+                        </ScrollLink>
+                        <ScrollLink
+                            to="contact"
+                            smooth={true}
+                            duration={500}
+                            className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200 hover:cursor-pointer"
+                        >
+                            Contact
+                        </ScrollLink>
                         <a
                             href="#responsive-header"
                             className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200"
                         >
                             Listings
-                        </a>
-                        <a
-                            href="#responsive-header"
-                            className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200"
-                        >
-                            Testimonies
                         </a>
                     </div>
                     <div>

@@ -86,7 +86,12 @@ const Footer = () => {
                             All Rights Reserved J Realty Group
                         </p>
                         <p class="mt-2 text-center text-sm text-gray-400 lg:text-right">
-                            Built with 🧰 by @abrar.murad416
+                            <a
+                                target="_blank"
+                                href="https://www.instagram.com/abrar.murad416/"
+                            >
+                                Built with 🧰 by @abrar.murad416
+                            </a>
                         </p>
                     </div>
                 </footer>

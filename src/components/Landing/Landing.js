@@ -30,12 +30,12 @@ export default function Landing() {
                     </p>
                 </div>
             </div>
-            <div className="flex items-center justify-center lg:justify-end mx-10">
+            <div className="flex items-center justify-center lg:justify-end mx-10 z-10">
                 <div className="h-80 lg:h-auto">
                     <img
                         src="/images/Group 1.png"
                         alt="Image"
-                        className="w-full h-full object-contain"
+                        className="w-full h-full object-contain lg:object-cover"
                     />
                 </div>
             </div>
