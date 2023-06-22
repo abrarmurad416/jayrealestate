@@ -10,24 +10,24 @@ export default [
     {
         id: 2,
         hook: "First-Time Homeownership experience with J Realty Group",
-        name: "",
+        name: "John Kingsley",
         review: '"J Realty Group opened the door to my dreams of homeownership. As a first-time buyer, I had countless questions and uncertainties, but their patient guidance and expertise put me at ease. They tirelessly searched for the perfect home, negotiated on my behalf, and made the entire process seamless."',
         subtext: "First-time homeowner",
     },
 
     {
-        id: 2,
-        hook: "amazing",
+        id: 3,
+        hook: "J Realty Group showcase is simply extraordinary",
         name: "Emanuel Maggio",
         review: '"As an experienced homeowner, I sought a real estate partner who could match my level of knowledge and expectations. J Realty Group exceeded all my expectations. Their team of seasoned professionals demonstrated in-depth market knowledge, strong negotiation skills, and a keen understanding of my specific requirements. I confidently recommend J Realty Group to fellow experienced homeowners looking for exceptional service"',
         subtext: "Veteran homeowner",
     },
 
     {
-        id: 2,
-        hook: "amazing",
-        name: "hello",
-        review: "review",
-        subtext: "subtext",
+        id: 4,
+        hook: "Customer-first oriented",
+        name: "Danial osbourne",
+        review: '"What impressed me the most about J Realty Group was their unwavering commitment to integrity and transparency. They acted as trusted advisors, always prioritizing my best interests and providing honest and objective assessments of each property we visited."',
+        subtext: "Satisfied client",
     },
 ];

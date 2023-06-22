@@ -22,11 +22,11 @@ const Reviews = () => {
             <br />
             <br />
             <section class="bg-white p-8">
-                <div class="grid mb-8 lg:mb-12 lg:grid-cols-2">
+                <div class="grid mb-8 lg:mb-12 lg:grid-cols-2 shadow-md">
                     {ReviewsData.map((item, index) => (
-                        <figure class="flex flex-col justify-center items-center p-8 text-center bg-blue-50 border-b md:p-12 lg:border-r  border-teal-500">
+                        <figure class="flex flex-col justify-center items-center p-8 text-center border-b md:p-12 border-r border-teal-500 border-t border-l">
                             <blockquote class="mx-auto mb-8 max-w-2xl text-gray-500 dark:text-gray-400">
-                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                                <h3 class="text-lg font-semibold text-black ">
                                     {item.hook}
                                 </h3>
                                 <p class="my-4">{item.review}</p>
@@ -37,7 +37,7 @@ const Reviews = () => {
                                     src="/images/user.png"
                                     alt="profile picture"
                                 />
-                                <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                <div class="space-y-0.5 font-medium text-black text-left">
                                     <div>{item.name}</div>
                                     <div class="text-sm font-light text-gray-500 dark:text-gray-400">
                                         {item.subtext}
