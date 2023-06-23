@@ -129,7 +129,7 @@ const Contact = () => {
                                             type="submit"
                                             class="bg-primary border-primary w-full rounded border p-3 text-teal-500 transition hover:bg-opacity-90 hover:bg-teal-500 hover:text-white"
                                         >
-                                            Send Message
+                                            Start a conversation
                                         </button>
                                     </div>
                                 </form>
