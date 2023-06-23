@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [hasScrolled, setHasScrolled] = useState(false);
 
@@ -100,19 +101,20 @@ export default function Navbar() {
                         >
                             Contact
                         </ScrollLink>
-                        <a
-                            href="#responsive-header"
-                            className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200"
+                        <Link
+                            className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200 hover:cursor-pointer"
+                            to="/listings"
                         >
                             Listings
-                        </a>
+                        </Link>
                     </div>
                     <div>
                         <a
-                            href="mailto:jayrealtygroup@gmail.com"
+                            href="https://calendly.com/abrarmurad/30min"
                             className="inline-block px-5 py-3 text-lg leading-none text-black bg-teal-500 border rounded transition-colors duration-300 hover:text-teal-500 hover:border hover:border-teal-500 hover:bg-white mt-4 lg:mt-0"
+                            target="_blank"
                         >
-                            jayrealtygroup@gmail.com
+                            Schedule a Call
                         </a>
                     </div>
                 </div>

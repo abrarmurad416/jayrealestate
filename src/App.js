@@ -1,17 +1,18 @@
-import Header from "./components/Header/Header";
-import Landing from "./components/Landing/Landing";
-import Footer from "./components/Footer/Footer";
-import Reviews from "./components/Reviews/Reviews";
-import Contact from "./components/Contact/Contact";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-export default function App() {
+import Home from "./Home";
+import Listings from "./components/Listings/Listings";
+
+const App = () => {
     return (
-        <div>
-            <Header />
-            <Landing />
-            <Reviews />
-            <Contact />
-            <Footer />
-        </div>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/listings" element={<Listings />} />
+            </Routes>
+        </Router>
     );
-}
+};
+
+export default App;

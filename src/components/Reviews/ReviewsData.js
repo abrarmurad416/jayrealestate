@@ -26,7 +26,7 @@ export default [
     {
         id: 4,
         hook: "Customer-first oriented",
-        name: "Danial osbourne",
+        name: "Danial Osbourne",
         review: '"What impressed me the most about J Realty Group was their unwavering commitment to integrity and transparency. They acted as trusted advisors, always prioritizing my best interests and providing honest and objective assessments of each property we visited."',
         subtext: "Satisfied client",
     },

@@ -3,20 +3,27 @@ import React from "react";
 const Contact = () => {
     return (
         <div>
-            <section class="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px] mx-10">
+            <section
+                class="relative z-10 overflow-hidden bg-white py-20 lg:py-[120px] mx-10"
+                id="contact"
+            >
                 <div class="container mx-auto">
                     <div class="-mx-4 flex flex-wrap lg:justify-between">
                         <div class="w-full px-4 lg:w-1/2 xl:w-6/12">
                             <div class="mb-12 max-w-[570px] lg:mb-0">
                                 <h2 class="text-4xl font-extrabold">
-                                    Drop Us A Line
+                                    Drop Us A{" "}
+                                    <span className="bg-gradient-to-b from-teal-500 to-blue-500 bg-clip-text text-transparent">
+                                        Line
+                                    </span>
                                 </h2>
                                 <p class="text-body-color mb-9 text-base leading-relaxed mt-2">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eius tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Ut enim adiqua minim veniam quis nostrud
-                                    exercitation ullamco
+                                    Casually scrolling or actively looking,
+                                    we'll be happy to take your call! Whether
+                                    you're looking for a business opportunity or
+                                    want to learn more about us, we have
+                                    different modes of access, all to the same
+                                    source. See you at the address!
                                 </p>
                                 <div class="mb-8 flex w-full max-w-[370px]">
                                     <div class="bg-primary text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px] bg-teal-500">
@@ -34,8 +41,8 @@ const Contact = () => {
                                             Our Location
                                         </h4>
                                         <p class="text-body-color text-base">
-                                            99 S.t Jomblo Park Pekanbaru 28292.
-                                            Indonesia
+                                            9000 Weston Rd #3, Woodbridge, ON
+                                            L4L 0L1
                                         </p>
                                     </div>
                                 </div>
@@ -57,7 +64,8 @@ const Contact = () => {
                                             Phone Number
                                         </h4>
                                         <p class="text-body-color text-base">
-                                            (+62)81 414 257 9980
+                                            DIR: (647) 609 - 1134 <br />
+                                            OFF: (905) 879 - 7653
                                         </p>
                                     </div>
                                 </div>
@@ -85,39 +93,41 @@ const Contact = () => {
                         </div>
                         <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
                             <div class="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
-                                <form>
+                                <form
+                                    action="https://formsubmit.co/your@email.com"
+                                    method="POST"
+                                >
                                     <div class="mb-6">
                                         <input
                                             type="text"
                                             placeholder="Your Name"
+                                            name="Name"
                                             class="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
+                                            required
                                         />
                                     </div>
                                     <div class="mb-6">
                                         <input
                                             type="email"
                                             placeholder="Your Email"
+                                            name="Email"
                                             class="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
-                                        />
-                                    </div>
-                                    <div class="mb-6">
-                                        <input
-                                            type="text"
-                                            placeholder="Your Phone"
-                                            class="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
+                                            required
                                         />
                                     </div>
                                     <div class="mb-6">
                                         <textarea
+                                            required
                                             rows="6"
                                             placeholder="Your Message"
+                                            name="Message"
                                             class="text-body-color border-[f0f0f0] focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                                         ></textarea>
                                     </div>
                                     <div>
                                         <button
                                             type="submit"
-                                            class="bg-primary border-primary w-full rounded border p-3 text-white transition hover:bg-opacity-90"
+                                            class="bg-primary border-primary w-full rounded border p-3 text-teal-500 transition hover:bg-opacity-90 hover:bg-teal-500 hover:text-white"
                                         >
                                             Send Message
                                         </button>
