@@ -165,17 +165,17 @@ const Contact = () => {
                                                         handleOpen(1)
                                                     }
                                                 >
-                                                    Question 1
+                                                    Does it cost anything to
+                                                    book a showing for a
+                                                    property?
                                                 </AccordionHeader>
                                                 <AccordionBody>
-                                                    We&apos;re not always in the
-                                                    position that we want to be
-                                                    at. We&apos;re constantly
-                                                    growing. We&apos;re
-                                                    constantly making mistakes.
-                                                    We&apos;re constantly trying
-                                                    to express ourselves and
-                                                    actualize our dreams.
+                                                    Absolutely not, I represent
+                                                    you and your interest. I am
+                                                    only paid upon the closing
+                                                    of properties, the rest of
+                                                    my services are
+                                                    complimentary!
                                                 </AccordionBody>
                                             </Accordion>
                                             <Accordion open={open === 2}>
@@ -184,17 +184,16 @@ const Contact = () => {
                                                         handleOpen(2)
                                                     }
                                                 >
-                                                    Question 2
+                                                    Can I book showings outside
+                                                    the GTA?
                                                 </AccordionHeader>
                                                 <AccordionBody>
-                                                    We&apos;re not always in the
-                                                    position that we want to be
-                                                    at. We&apos;re constantly
-                                                    growing. We&apos;re
-                                                    constantly making mistakes.
-                                                    We&apos;re constantly trying
-                                                    to express ourselves and
-                                                    actualize our dreams.
+                                                    ABSOLUTELY, we at J realty
+                                                    Group heavily encourage
+                                                    investing outside our
+                                                    cities. This grows the
+                                                    economy and leaves you with
+                                                    more potential returns!
                                                 </AccordionBody>
                                             </Accordion>
                                             <Accordion open={open === 3}>
@@ -203,17 +202,23 @@ const Contact = () => {
                                                         handleOpen(3)
                                                     }
                                                 >
-                                                    Question 3
+                                                    What is the best way to
+                                                    reach Jashan?
                                                 </AccordionHeader>
                                                 <AccordionBody>
-                                                    We&apos;re not always in the
-                                                    position that we want to be
-                                                    at. We&apos;re constantly
-                                                    growing. We&apos;re
-                                                    constantly making mistakes.
-                                                    We&apos;re constantly trying
-                                                    to express ourselves and
-                                                    actualize our dreams.
+                                                    You can call or text my line
+                                                    at (647) 609-1134. I'm also
+                                                    available via email at{" "}
+                                                    <a
+                                                        href="mailto:Jayrealtygroup@gmail.com"
+                                                        className="underline decoration-4 decoration-teal-500"
+                                                    >
+                                                        Jayrealtygroup@gmail.com
+                                                    </a>
+                                                    .{" "}
+                                                    <span className="font-bold">
+                                                        SERVICES AVAILABLE 24/7!
+                                                    </span>
                                                 </AccordionBody>
                                             </Accordion>
                                         </Fragment>
