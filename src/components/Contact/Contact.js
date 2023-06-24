@@ -1,6 +1,16 @@
-import React from "react";
+import { Fragment, useState } from "react";
+import {
+    Accordion,
+    AccordionHeader,
+    AccordionBody,
+} from "@material-tailwind/react";
 
 const Contact = () => {
+    const [open, setOpen] = useState(1);
+
+    const handleOpen = (value) => {
+        setOpen(open === value ? 0 : value);
+    };
     return (
         <div>
             <section
@@ -138,6 +148,92 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
+            <div class="container my-24 mx-auto px-6">
+                <section class="mb-32 text-center">
+                    <div class="py-12 md:px-12">
+                        <div class="container mx-auto xl:px-32 relative">
+                            <div class="grid items-center lg:grid-cols-2">
+                                <div class="mb-12 lg:mb-0 mx-2">
+                                    <div class="relative z-10 block rounded-lg bg-white bg-opacity-60 dark:bg-black dark:bg-opacity-20 px-6 py-12 shadow-md backdrop-blur-md md:px-12 lg:-mr-14">
+                                        <h2 class="mb-12 text-3xl font-bold">
+                                            Frequently Asked Questions
+                                        </h2>
+                                        <Fragment>
+                                            <Accordion open={open === 1}>
+                                                <AccordionHeader
+                                                    onClick={() =>
+                                                        handleOpen(1)
+                                                    }
+                                                >
+                                                    Question 1
+                                                </AccordionHeader>
+                                                <AccordionBody>
+                                                    We&apos;re not always in the
+                                                    position that we want to be
+                                                    at. We&apos;re constantly
+                                                    growing. We&apos;re
+                                                    constantly making mistakes.
+                                                    We&apos;re constantly trying
+                                                    to express ourselves and
+                                                    actualize our dreams.
+                                                </AccordionBody>
+                                            </Accordion>
+                                            <Accordion open={open === 2}>
+                                                <AccordionHeader
+                                                    onClick={() =>
+                                                        handleOpen(2)
+                                                    }
+                                                >
+                                                    Question 2
+                                                </AccordionHeader>
+                                                <AccordionBody>
+                                                    We&apos;re not always in the
+                                                    position that we want to be
+                                                    at. We&apos;re constantly
+                                                    growing. We&apos;re
+                                                    constantly making mistakes.
+                                                    We&apos;re constantly trying
+                                                    to express ourselves and
+                                                    actualize our dreams.
+                                                </AccordionBody>
+                                            </Accordion>
+                                            <Accordion open={open === 3}>
+                                                <AccordionHeader
+                                                    onClick={() =>
+                                                        handleOpen(3)
+                                                    }
+                                                >
+                                                    Question 3
+                                                </AccordionHeader>
+                                                <AccordionBody>
+                                                    We&apos;re not always in the
+                                                    position that we want to be
+                                                    at. We&apos;re constantly
+                                                    growing. We&apos;re
+                                                    constantly making mistakes.
+                                                    We&apos;re constantly trying
+                                                    to express ourselves and
+                                                    actualize our dreams.
+                                                </AccordionBody>
+                                            </Accordion>
+                                        </Fragment>
+                                    </div>
+                                </div>
+                                <div class="md:mb-12 lg:mb-0 mx-2">
+                                    <div class="relative h-[700px] rounded-lg shadow-lg dark:shadow-black/20">
+                                        <iframe
+                                            src="https://maps.google.com/maps?q=9000%20Weston%20Rd%20%233,%20ON%20L4L%200L1&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                            class="absolute left-0 top-0 h-full w-full rounded-lg"
+                                            frameborder="0"
+                                            allowfullscreen
+                                        ></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     );
 };
