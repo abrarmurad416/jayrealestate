@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Modal from "react-modal";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -49,6 +50,16 @@ const Listings = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const openModal = () => {
+        setIsOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsOpen(false);
+    };
 
     return (
         <div>
@@ -111,7 +122,7 @@ const Listings = () => {
                         <div>
                             <a
                                 href="https://calendly.com/abrarmurad/30min"
-                                className="inline-block px-5 py-3 text-lg leading-none text-black bg-teal-500 border rounded transition-colors duration-300 hover:text-teal-500 hover:border hover:border-teal-500 hover:bg-white mt-4 lg:mt-0"
+                                className="inline-block px-5 py-3 text-lg leading-none text-white bg-teal-500 border rounded transition-colors duration-300 hover:text-teal-500 hover:border hover:border-teal-500 hover:bg-white mt-4 lg:mt-0"
                                 target="_blank"
                             >
                                 Schedule a Call
@@ -125,9 +136,9 @@ const Listings = () => {
                     <Card className="mt-6 w-96">
                         <CardHeader color="blue-gray" className="relative h-56">
                             <img
-                                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                                alt="img-blur-shadow"
-                                layout="fill"
+                                src="/images/woodbridgebasement.png"
+                                alt="woodbridgebasement"
+                                className="w-full h-full object-cover"
                             />
                         </CardHeader>
                         <CardBody>
@@ -136,71 +147,57 @@ const Listings = () => {
                                 color="blue-gray"
                                 className="mb-2"
                             >
-                                UI/UX Review Check
+                                Woodbridge Basement for Rent{" "}
+                                <span className="text-green-500">
+                                    $1,550.00
+                                </span>
+                            </Typography>
+                            <Typography className="mb-2 border-b-4 border-teal-500 hover:text-blue-500">
+                                <a
+                                    href="https://shorturl.at/iEFKT"
+                                    target="_blank"
+                                >
+                                    {" "}
+                                    28 Cairnburg Pl, Vaughan, L4L 3L5
+                                </a>
                             </Typography>
                             <Typography>
-                                The place is close to Barceloneta Beach and bus
-                                stop just 2 min by walk and near to
-                                &quot;Naviglio&quot; where you can enjoy the
-                                main night life in Barcelona.
+                                Prestigious Area! <br />• Full credit report{" "}
+                                <br />• Job letter
+                                <br />• Identification <br />• Job and landlord
+                                reference required
                             </Typography>
                         </CardBody>
                         <CardFooter className="pt-0">
-                            <Button>Read More</Button>
-                        </CardFooter>
-                    </Card>
-                    <Card className="mt-6 w-96">
-                        <CardHeader color="blue-gray" className="relative h-56">
-                            <img
-                                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                                alt="img-blur-shadow"
-                                layout="fill"
-                            />
-                        </CardHeader>
-                        <CardBody>
-                            <Typography
-                                variant="h5"
-                                color="blue-gray"
-                                className="mb-2"
-                            >
-                                UI/UX Review Check
-                            </Typography>
-                            <Typography>
-                                The place is close to Barceloneta Beach and bus
-                                stop just 2 min by walk and near to
-                                &quot;Naviglio&quot; where you can enjoy the
-                                main night life in Barcelona.
-                            </Typography>
-                        </CardBody>
-                        <CardFooter className="pt-0">
-                            <Button>Read More</Button>
-                        </CardFooter>
-                    </Card>
-                    <Card className="mt-6 w-96">
-                        <CardHeader color="blue-gray" className="relative h-56">
-                            <img
-                                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
-                                alt="img-blur-shadow"
-                                layout="fill"
-                            />
-                        </CardHeader>
-                        <CardBody>
-                            <Typography
-                                variant="h5"
-                                color="blue-gray"
-                                className="mb-2"
-                            >
-                                UI/UX Review Check
-                            </Typography>
-                            <Typography>
-                                The place is close to Barceloneta Beach and bus
-                                stop just 2 min by walk and near to
-                                &quot;Naviglio&quot; where you can enjoy the
-                                main night life in Barcelona.
-                            </Typography>
-                        </CardBody>
-                        <CardFooter className="pt-0">
-                            <Button>Read More</Button>
+                            <div>
+                                <Button
+                                    className="bg-teal-500"
+                                    onClick={openModal}
+                                >
+                                    Read More
+                                </Button>
+                                <Modal
+                                    isOpen={isOpen}
+                                    onRequestClose={closeModal}
+                                    contentLabel="Example Modal"
+                                    className="fixed inset-0 flex items-center justify-center"
+                                    overlayClassName="fixed inset-0 bg-gray-50"
+                                >
+                                    <section
+                                        className="w-[80vw] bg-white p-6 rounded-lg shadow-md z-50"
+                                        id="sectionmodal"
+                                    >
+                                        <h2>Modal Content</h2>
+                                        <p>This is the content of the modal.</p>
+                                        <Button
+                                            onClick={closeModal}
+                                            className="bg-red-500"
+                                        >
+                                            Go Back
+                                        </Button>
+                                    </section>
+                                </Modal>
+                            </div>
                         </CardFooter>
                     </Card>
                 </div>

@@ -36,6 +36,7 @@ export default function Landing() {
                         src="/images/Group 1.png"
                         alt="Image"
                         className="w-full h-full object-contain lg:object-cover"
+                        loading="lazy"
                     />
                 </div>
             </div>
