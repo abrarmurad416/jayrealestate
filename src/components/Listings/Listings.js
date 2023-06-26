@@ -187,13 +187,162 @@ const Listings = () => {
                                         className="w-[80vw] bg-white p-6 rounded-lg shadow-md z-50"
                                         id="sectionmodal"
                                     >
-                                        <h2>Modal Content</h2>
-                                        <p>This is the content of the modal.</p>
+                                        <h2 className="font-bold">
+                                            Basement | Bedrooms: 1 + Den |
+                                            Bathrooms: 1
+                                        </h2>
+                                        <br />
+                                        <div class="relative overflow-x-auto  sm:rounded-lg">
+                                            <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                                                <thead class="text-xs text-gray-700 uppercase dark:text-gray-400">
+                                                    <tr>
+                                                        <th
+                                                            scope="col"
+                                                            class="px-6 py-3 bg-gray-50 dark:bg-gray-800"
+                                                        >
+                                                            Overview
+                                                        </th>
+                                                        <th
+                                                            scope="col"
+                                                            class="px-6 py-3"
+                                                        >
+                                                            Details
+                                                        </th>
+                                                        <th
+                                                            scope="col"
+                                                            class="px-6 py-3 bg-gray-50 dark:bg-gray-800"
+                                                        >
+                                                            The Unit
+                                                        </th>
+                                                        <th
+                                                            scope="col"
+                                                            class="px-6 py-3"
+                                                        >
+                                                            Details
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                                                        <th
+                                                            scope="row"
+                                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
+                                                        >
+                                                            Utilities Included
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            Not Included
+                                                        </td>
+                                                        <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                                            Size (sqft)
+                                                        </td>
+                                                        <td class="px-6 py-4">
+                                                            800
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                                                        <th
+                                                            scope="row"
+                                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
+                                                        >
+                                                            Wi-Fi and More
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            Not Included
+                                                        </td>
+                                                        <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                                            Furnished
+                                                        </td>
+                                                        <td class="px-6 py-4">
+                                                            Yes
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                                                        <th
+                                                            scope="row"
+                                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
+                                                        >
+                                                            Parking Included
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            1
+                                                        </td>
+                                                        <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                                            Appliances
+                                                        </td>
+                                                        <td class="px-6 py-4">
+                                                            Not Included
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="border-b border-gray-200 dark:border-gray-700">
+                                                        <th
+                                                            scope="row"
+                                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
+                                                        >
+                                                            Agreement Type
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            1 year
+                                                        </td>
+                                                        <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-8000">
+                                                            Air Conditioning
+                                                        </td>
+                                                        <td class="px-6 py-4">
+                                                            Yes
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th
+                                                            scope="row"
+                                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
+                                                        >
+                                                            Move-in Date
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            June 15, 2023
+                                                        </td>
+                                                        <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                                            Personal Outdoor
+                                                            Space
+                                                        </td>
+                                                        <td class="px-6 py-4">
+                                                            Not Included
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th
+                                                            scope="row"
+                                                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800"
+                                                        >
+                                                            Pet Friendly
+                                                        </th>
+                                                        <td class="px-6 py-4">
+                                                            No
+                                                        </td>
+                                                        <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap bg-gray-50 dark:text-white dark:bg-gray-800">
+                                                            Smoking Permitted
+                                                        </td>
+                                                        <td class="px-6 py-4">
+                                                            Outdoors only
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br />
                                         <Button
                                             onClick={closeModal}
-                                            className="bg-red-500"
+                                            className="bg-red-500 mx-2"
                                         >
                                             Go Back
+                                        </Button>
+                                        <Button className="bg-deep-purple-500 mx-2">
+                                            <a
+                                                href="https://www.kijiji.ca/v-view-details.html?adId=1661522541"
+                                                target="_blank"
+                                            >
+                                                Kijiji listing
+                                            </a>
                                         </Button>
                                     </section>
                                 </Modal>
