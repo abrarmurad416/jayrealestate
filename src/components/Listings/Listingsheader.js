@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { BsHouseDoor } from "react-icons/bs";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-export default function Header() {
+const Listingsheader = () => {
+    const navigate = useNavigate();
+
+    const handleGoBack = () => {
+        navigate("/");
+    };
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [hasScrolled, setHasScrolled] = useState(false);
 
@@ -34,6 +41,8 @@ export default function Header() {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <div className={`sticky top-0 z-50 ${hasScrolled ? "shadow-md" : ""}`}>
@@ -76,38 +85,18 @@ export default function Header() {
                         isMenuOpen ? "block" : "hidden"
                     } flex-grow lg:flex lg:items-center lg:w-auto`}
                 >
-                    <div className="text-lg lg:flex-grow">
-                        <ScrollLink
-                            to="about"
-                            smooth={true}
-                            duration={500}
-                            className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200 hover:cursor-pointer"
+                    <div className="text-lg lg:flex-grow justify-center items-center flex">
+                        <button
+                            onClick={handleGoBack}
+                            className="flex items-center mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200 hover:cursor-pointer"
                         >
-                            About
-                        </ScrollLink>
-                        <ScrollLink
-                            to="testimonials"
-                            smooth={true}
-                            duration={500}
-                            className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200 hover:cursor-pointer"
-                        >
-                            Testimonials
-                        </ScrollLink>
-                        <ScrollLink
-                            to="contact"
-                            smooth={true}
-                            duration={500}
-                            className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200 hover:cursor-pointer"
-                        >
-                            Contact
-                        </ScrollLink>
-                        <Link
-                            className="block mt-4 lg:inline-block lg:mt-0 text-black pr-6 pl-6 hover:bg-gray-50 hover:text-teal-500 rounded-lg py-2 px-4 transition-colors duration-200 hover:cursor-pointer"
-                            to="/listings"
-                        >
-                            Listings
-                        </Link>
+                            <span className="mr-1">Exit the listings</span>
+                            <div className="flex justify-center items-center">
+                                <BsHouseDoor className="w-4 h-4" />
+                            </div>
+                        </button>
                     </div>
+
                     <div>
                         <a
                             href="mailto:jayrealtygroup@gmail.com"
@@ -121,4 +110,6 @@ export default function Header() {
             </nav>
         </div>
     );
-}
+};
+
+export default Listingsheader;
