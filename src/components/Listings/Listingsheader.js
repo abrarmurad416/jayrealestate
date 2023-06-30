@@ -103,7 +103,7 @@ const Listingsheader = () => {
                             className="inline-block px-5 py-3 text-lg leading-none text-white bg-teal-500 border rounded transition-colors duration-300 hover:text-teal-500 hover:border hover:border-teal-500 hover:bg-white mt-4 lg:mt-0"
                             target="_blank"
                         >
-                            jayrealtygroup@gmail.com
+                            Book a Call
                         </a>
                     </div>
                 </div>
