@@ -106,14 +106,14 @@ const Contact = () => {
                         <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
                             <div class="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
                                 <form
-                                    action="https://formsubmit.co/your@email.com"
+                                    action="https://formsubmit.co/jayrealtygroup@gmail.com"
                                     method="POST"
                                 >
                                     <div class="mb-6">
                                         <input
-                                            type="text"
+                                            type="name"
                                             placeholder="Your Name"
-                                            name="Name"
+                                            name="name"
                                             class="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                                             required
                                         />
@@ -122,7 +122,7 @@ const Contact = () => {
                                         <input
                                             type="email"
                                             placeholder="Your Email"
-                                            name="Email"
+                                            name="email"
                                             class="text-body-color border-[f0f0f0] focus:border-primary w-full rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                                             required
                                         />
@@ -132,7 +132,7 @@ const Contact = () => {
                                             required
                                             rows="6"
                                             placeholder="Your Message"
-                                            name="Message"
+                                            name="message"
                                             class="text-body-color border-[f0f0f0] focus:border-primary w-full resize-none rounded border py-3 px-[14px] text-base outline-none focus-visible:shadow-none"
                                         ></textarea>
                                     </div>
