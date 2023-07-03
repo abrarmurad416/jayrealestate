@@ -52,8 +52,8 @@ const Contact = () => {
                                             Our Location
                                         </h4>
                                         <p class="text-body-color text-base">
-                                            9000 Weston Rd #3, Woodbridge, ON
-                                            L4L 0L1
+                                            111 Zenway Blvd #6, Vaughan, ON L4H
+                                            3H9
                                         </p>
                                     </div>
                                 </div>
@@ -229,7 +229,7 @@ const Contact = () => {
                                 <div class="md:mb-12 lg:mb-0 mx-2">
                                     <div class="relative h-[700px] rounded-lg shadow-lg dark:shadow-black/20">
                                         <iframe
-                                            src="https://maps.google.com/maps?q=9000%20Weston%20Rd%20%233,%20ON%20L4L%200L1&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                                            src="https://maps.google.com/maps?q=111%20Zenway%20Blvd,%20Kleinburg,%20ON%20L4H%202Y7&t=&z=13&ie=UTF8&iwloc=&output=embed"
                                             class="absolute left-0 top-0 h-full w-full rounded-lg"
                                             frameborder="0"
                                             allowfullscreen

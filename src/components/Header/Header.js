@@ -110,7 +110,7 @@ export default function Header() {
                     </div>
                     <div>
                         <a
-                            href="mailto:jayrealtygroup@gmail.com"
+                            href="https://calendly.com/jayrealtygroup/30min"
                             className="inline-block px-5 py-3 text-lg leading-none text-white bg-teal-500 border rounded transition-colors duration-300 hover:text-teal-500 hover:border hover:border-teal-500 hover:bg-white mt-4 lg:mt-0"
                             target="_blank"
                         >
