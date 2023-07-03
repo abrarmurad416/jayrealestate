@@ -106,7 +106,7 @@ const Contact = () => {
                         <div class="w-full px-4 lg:w-1/2 xl:w-5/12">
                             <div class="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
                                 <form
-                                    action="https://formsubmit.co/jayrealtygroup@gmail.com"
+                                    action="https://formsubmit.co/7d90eed6b5e54b318d8115e528cfc6e2"
                                     method="POST"
                                 >
                                     <div class="mb-6">
