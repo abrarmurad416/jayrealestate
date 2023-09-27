@@ -47,6 +47,9 @@ const Reviews = () => {
                         </figure>
                     ))}
                 </div>
+                <span>
+                    <p class="text-xs text-gray-50">**artificial data**</p>
+                </span>
             </section>
         </div>
     );
